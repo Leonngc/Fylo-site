@@ -1,0 +1,57 @@
+@use "_core.sass"
+
+body
+    background: core.$main-color
+    color: core.$text-color
+    font-family: core.$font-main
+.menu-container
+    ul
+        list-style: none
+        li
+            font-family: core.$font-secondary
+            a
+                text-decoration: none
+                color: core.$menu-color
+                font-size: core.$font-size-desktop
+                font-weight: 400
+
+.intro-container
+    @include core.background-image("bg-curvy-desktop.svg", "../images/")
+    h2
+        font-family: core.$font-main
+        font-size: 30px
+    p
+        font-size: core.$font-paragraph
+
+.started-btn
+    width: 200px
+    padding: 10px
+    border: none
+    border-radius: 20px
+    font-size: 22px
+    background-color: core.$blue
+    color: core.$text-color
+    &:hover
+        background-color: core.$cyan
+        transition: core.$transition
+    a
+        text-decoration: none
+        color: core.$text-color
+
+.skills-container
+    background-color: core.$dark-blue 
+
+    
+.prod-container
+    background-color: core.$dark-blue
+    h2
+        font-size: core.$font-title
+    p
+        font-size: core.$font-paragraph
+    a
+        color: core.$text-color
+        text-decoration: none
+        text-align: center
+        img
+            width: 25px
+            margin-top: 5px 
