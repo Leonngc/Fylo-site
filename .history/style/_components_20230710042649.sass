@@ -1,0 +1,24 @@
+@use "_core.sass"
+
+body
+    background: core.$main-color 
+    color: core.$text-color
+    font-family: core.$font-secondary
+
+.menu-container
+    ul
+        list-style: none
+            display: flex
+            flex-direction: row
+            flex-wrap: wrap
+            justify-content: space-between
+            
+            li
+                margin-right: 30px
+                font-family: core.$font-secondary 
+                a
+                    text-decoration: none
+                    color: core.$menu-color
+                    font-size: core.$font-size-desktop
+            
+    
