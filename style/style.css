@@ -1,22 +1,36 @@
-@import url(https://fonts.google.com/specimen/Raleway);
-@import url(https://fonts.google.com/specimen/Open+Sans);
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 body {
   background: #1C2230;
   color: #fff;
-  font-family: Open Sans;
+  font-family: "Open Sans", sans-serif;
+}
+body::-webkit-scrollbar {
+  width: 8px;
+}
+body::-webkit-scrollbar-track {
+  background: #181F2B;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #65e2d9;
+  border-radius: 20px;
 }
 
 .menu-container ul {
   list-style: none;
 }
 .menu-container ul li {
-  font-family: Raleway;
+  font-family: "Raleway", sans-serif;
 }
 .menu-container ul li a {
   text-decoration: none;
   color: #e4e4e4;
   font-size: 20px;
   font-weight: 400;
+}
+.menu-container ul li a:hover {
+  color: gray;
+  transition: 0.5s;
 }
 
 .intro-container {
@@ -26,8 +40,9 @@ body {
   background-repeat: no-repeat;
 }
 .intro-container h2 {
-  font-family: Open Sans;
+  font-family: "Open Sans", sans-serif;
   font-size: 30px;
+  padding: 30px;
 }
 .intro-container p {
   font-size: 16px;
@@ -36,6 +51,7 @@ body {
 .started-btn {
   width: 200px;
   padding: 10px;
+  margin: 50px auto;
   border: none;
   border-radius: 20px;
   font-size: 22px;
@@ -57,7 +73,7 @@ body {
 
 .prod-container {
   background-color: #181F2B;
-  padding: 50px;
+  padding: 160px;
 }
 .prod-container h2 {
   font-size: 30px;
@@ -100,8 +116,28 @@ form p {
   font-size: 16px;
 }
 
+footer {
+  background-color: #0B1523;
+  text-align: center;
+}
+footer div {
+  width: 8%;
+}
+footer div a {
+  color: #fff;
+}
+
+.attribution {
+  color: #65e2d9;
+}
+.attribution a {
+  color: #fff;
+}
+
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 header {
@@ -125,6 +161,7 @@ header ul li {
   text-align: center;
   width: 55%;
   margin: 20px auto 0px;
+  padding: 50px;
 }
 
 .skills-container {
@@ -141,8 +178,12 @@ header ul li {
   width: 50%;
 }
 .skills-container .container div {
+  padding-top: 50px;
   width: 40%;
   text-align: center;
+}
+.skills-container .container div p {
+  padding-top: 20px;
 }
 
 .prod-container {
@@ -170,7 +211,7 @@ form {
   text-align: center;
   margin: 0 auto;
   background-color: #181F2B;
-  padding: 50px;
+  padding: 60px;
   width: 60%;
   margin-top: 30px;
 }
@@ -178,6 +219,13 @@ form input {
   width: 300px;
   padding: 10px;
   margin: 10px;
+}
+
+footer {
+  padding: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .logo {
