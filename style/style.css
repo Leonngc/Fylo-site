@@ -43,7 +43,11 @@ body::-webkit-scrollbar-thumb {
   font-family: "Open Sans", sans-serif;
   font-size: 30px;
   padding: 30px;
-  font-size: 16px;
+}
+@media (max-width: 800px) {
+  .intro-container h2 {
+    font-size: 16px;
+  }
 }
 .intro-container p {
   font-size: 16px;
@@ -75,7 +79,11 @@ body::-webkit-scrollbar-thumb {
 .prod-container {
   background-color: #181F2B;
   padding: 160px;
-  padding: 30px;
+}
+@media (max-width: 800px) {
+  .prod-container {
+    padding: 30px;
+  }
 }
 .prod-container h2 {
   font-size: 30px;
@@ -87,7 +95,11 @@ body::-webkit-scrollbar-thumb {
 .prod-container a {
   color: #fff;
   text-align: center;
-  font-size: 18px;
+}
+@media (max-width: 800px) {
+  .prod-container a {
+    font-size: 18px;
+  }
 }
 .prod-container a:hover {
   color: #65e2d9;
@@ -159,12 +171,17 @@ header ul {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: auto;
-  padding: 10px;
 }
 header ul li {
   margin-right: 30px;
 }
+@media (max-width: 800px) {
+  header ul {
+    margin: auto;
+    padding: 10px;
+  }
+}
+
 .intro-container {
   text-align: center;
   width: 55%;
@@ -199,8 +216,12 @@ header ul li {
   padding-top: 50px;
   width: 40%;
   text-align: center;
-  width: 80%;
-  margin: auto;
+}
+@media (max-width: 800px) {
+  .skills-container .container div {
+    width: 80%;
+    margin: auto;
+  }
 }
 .skills-container .container div p {
   padding-top: 20px;
@@ -210,7 +231,11 @@ header ul li {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  display: block;
+}
+@media (max-width: 800px) {
+  .prod-container {
+    display: block;
+  }
 }
 .prod-container div {
   width: 35%;
@@ -237,9 +262,14 @@ header ul li {
   width: 30%;
   padding: 40px;
   border-radius: 10px;
-  width: 90%;
-  margin: 30px auto;
 }
+@media (max-width: 800px) {
+  .testemonial-container .testemonial-box {
+    width: 90%;
+    margin: 30px auto;
+  }
+}
+
 form {
   text-align: center;
   margin: 0 auto;
@@ -247,8 +277,12 @@ form {
   padding: 60px;
   width: 60%;
   margin-top: 30px;
-  width: 90%;
-  padding: 20px 30px;
+}
+@media (max-width: 800px) {
+  form {
+    width: 90%;
+    padding: 20px 30px;
+  }
 }
 @media (max-width: 800px) {
   form p {
@@ -259,21 +293,35 @@ form input {
   width: 300px;
   padding: 10px;
   margin: 10px;
-  width: 250px;
 }
+@media (max-width: 800px) {
+  form input {
+    width: 250px;
+  }
+}
+
 footer {
   padding: 40px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  display: block;
 }
 footer div {
   width: 8%;
-  width: 70%;
-  margin: auto;
-  padding: 20px;
 }
+@media (max-width: 800px) {
+  footer div {
+    width: 70%;
+    margin: auto;
+    padding: 20px;
+  }
+}
+@media (max-width: 800px) {
+  footer {
+    display: block;
+  }
+}
+
 .logo {
   width: 70%;
 }
@@ -293,8 +341,13 @@ footer div {
 
 .prod-container img {
   width: 30%;
-  width: 80%;
 }
+@media (max-width: 800px) {
+  .prod-container img {
+    width: 80%;
+  }
+}
+
 .profile-img {
   border-radius: 50%;
   width: 12%;
@@ -307,7 +360,12 @@ footer div {
 }
 
 footer img {
-  width: 30%;
+  width: 20%;
+}
+@media (max-width: 800px) {
+  footer img {
+    width: 30%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
