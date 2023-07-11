@@ -1,0 +1,33 @@
+@use "_core.sass"
+.logo
+    width: 70%
+
+.intro-container
+    img
+        width: 45%
+
+.skills-container
+    div
+        img
+            width: 10%
+            @include core.media(phone)
+             width: 30%
+
+.prod-container
+    img
+        width: 30%
+        @include core.media(phone)
+        width: 80%
+        margin: auto
+
+.profile-img
+    border-radius: 50%
+    width: 12%
+    @include core.media(phone)
+        width: 15%
+        margin: 20px 0px 0px 0px
+
+footer
+    img
+         @include core.media(phone)
+         width: 30%

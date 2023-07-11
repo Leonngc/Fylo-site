@@ -1,0 +1,32 @@
+$main-color:  #1C2230
+$text-color: #fff
+$menu-color: #e4e4e4
+$cyan: #65e2d9
+$blue: #339ECC
+$dark-blue: #181F2B
+$background-footer: #0B1523
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap')
+
+$font-main: 'Open Sans', sans-serif
+$font-secondary:'Raleway', sans-serif
+$font-size-desktop: 20px
+$font-size-mobile: 16px
+$font-title: 30px
+$font-paragraph: 16px
+$transition: .5s
+
+@mixin background-image($image, $url) 
+  background-image: url($url + $image)
+  background-position: bottom
+  background-size: cover
+  background-repeat: no-repeat
+
+
+@mixin background-testemonial($image, $url) 
+  background-image: url($url + $image)
+  background-position: top
+  background-size: 50px
+  background-repeat: no-repeat
+@mixin media()
+  

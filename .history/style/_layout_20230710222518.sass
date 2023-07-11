@@ -1,0 +1,100 @@
+@use "_core.sass"
+*
+    box-sizing: border-box
+    padding: 0
+    margin: 0
+    overflow-x: hidden
+header
+    display: flex
+    flex-wrap: wrap
+    flex-direction: row
+    justify-content: space-between
+    padding: 30px 120px
+    @include core.media(phone)
+        padding: 30px 20px
+
+    ul
+        display: flex
+        flex-direction: row
+        flex-wrap: wrap
+        justify-content: space-between
+        li
+            margin-right: 30px
+        @include core.media(phone)
+        margin: auto
+        padding: 10px
+                
+
+.intro-container
+    text-align: center
+    width: 55%
+    margin: 20px auto 0px
+    padding: 50px
+    @include core.media(phone)
+        width: 90%
+
+.skills-container
+    padding-top: 30px
+    .container
+        display: flex
+        align-content: center
+        align-items: center
+        flex-wrap: wrap
+        flex-direction: row
+        margin: auto
+        justify-content: space-between
+        width: 50%
+        @include core.media(phone)
+            width: 80%
+        div
+            padding-top: 50px
+            width: 40%
+            text-align: center
+            @include core.media(phone)
+            width: 80%
+            margin: auto
+            p
+                padding-top:20px 
+        
+        
+.prod-container
+    display: flex
+    align-items: center
+    justify-content: space-around
+    div
+        width: 35%
+         @include core.media(phone)
+         
+
+.testemonial-container
+    display: flex
+    flex-direction: row
+    justify-content: space-around
+    padding: 50px
+
+    .testemonial-box
+        width: 30%
+        padding: 40px
+        border-radius: 10px
+
+form
+    text-align: center
+    margin: 0 auto
+    background-color: core.$dark-blue
+    padding: 60px
+    width: 60%
+    margin-top: 30px
+    input
+        width: 300px
+        padding: 10px
+        margin: 10px
+
+
+footer
+    padding: 40px
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-around
+
+
+    

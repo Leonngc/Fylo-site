@@ -1,0 +1,104 @@
+@use "_core.sass"
+
+body
+    background: core.$main-color
+    color: core.$text-color
+    font-family: core.$font-main
+    &::-webkit-scrollbar
+        width: 8px
+    &::-webkit-scrollbar-track
+        background: core.$dark-blue
+    &::-webkit-scrollbar-thumb
+        background-color: core.$cyan
+        border-radius: 20px
+
+.menu-container
+    ul
+        list-style: none
+        li
+            font-family: core.$font-secondary
+            a
+                text-decoration: none
+                color: core.$menu-color
+                font-size: core.$font-size-desktop
+                font-weight: 400
+                &:hover
+                    color: gray
+                    transition: core.$transition
+            
+
+.intro-container
+    @include core.background-image("bg-curvy-desktop.svg", "../images/")
+    h2
+        font-family: core.$font-main
+        font-size: 30px
+        padding: 30px
+        @include core.media(phone)
+        font-size: core.$font-pa
+    p
+        font-size: core.$font-paragraph
+
+.started-btn
+    width: 200px
+    padding: 10px
+    margin: 50px auto
+    border: none
+    border-radius: 20px
+    font-size: 22px
+    background-color: core.$blue
+    color: core.$text-color
+    &:hover
+        background-color: core.$cyan
+        transition: core.$transition
+    a
+        text-decoration: none
+        color: core.$text-color
+
+.skills-container
+    background-color: core.$dark-blue 
+
+    
+.prod-container
+    background-color: core.$dark-blue
+    padding: 160px
+    h2
+        font-size: core.$font-title
+    p
+        font-size: core.$font-paragraph
+    a
+        color: core.$text-color
+        text-align: center
+        &:hover
+             color: core.$cyan
+        img
+            width: 15px 
+
+.testemonial-container
+    background-color: core.$dark-blue
+    @include core.background-testemonial("bg-quotes.png" , "../images/")
+    
+    .testemonial-box
+        background-color: #202A3C
+
+form
+    box-shadow: 2px 5px 5px #00000049
+    border-radius: 5px
+    input
+        border: none
+        border-radius: 30px
+        font-size: 16px
+    
+    p
+        font-size: core.$font-paragraph
+
+footer
+    background-color: core.$background-footer
+    text-align: center
+    div
+        width: 8%
+        a
+            color: core.$text-color
+.attribution
+    color: core.$cyan     
+    a
+        color: core.$text-color
