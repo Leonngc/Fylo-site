@@ -159,11 +159,11 @@ header {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
-  padding: 30px 120px;
+  padding: 40px 120px;
 }
 @media (max-width: 800px) {
   header {
-    padding: 30px 20px;
+    padding: 30px 0px;
   }
 }
 header ul {
@@ -174,11 +174,13 @@ header ul {
 }
 header ul li {
   margin-right: 30px;
+  padding: 0 6px;
 }
 @media (max-width: 800px) {
   header ul {
     margin: auto;
     padding: 10px;
+    flex-wrap: nowrap;
   }
 }
 
@@ -324,6 +326,7 @@ footer div {
 
 .logo {
   width: 70%;
+  padding: 18px;
 }
 
 .intro-container img {
